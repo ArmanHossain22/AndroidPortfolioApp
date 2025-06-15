@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_project_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/tv_project_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_project_icon"
+            android:layout_marginTop="4dp"
+            android:text="The App Title"
+            android:layout_toEndOf="@+id/iv_project_icon"/>
+
+        <TextView
+            android:id="@+id/tv_project_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description about the app"
+            android:layout_toEndOf="@+id/iv_project_icon"
+            android:layout_below="@+id/tv_project_title"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
